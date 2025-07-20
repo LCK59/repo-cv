@@ -1,0 +1,115 @@
+/* Reset the basics */
+* {
+  margin: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Section styling */
+section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* show skills horizontally */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* So it doesn't overflow on small screens */
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skill-group {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 200px; /* flex-grow, flex-shrink, min width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-group h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.skill-group ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+/*Paragraphs*/
+p {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+ul ul {
+  list-style-type: disc;
+  margin-top: 5px;
+}
+
+/* Add some spacing between list items */
+li {
+  margin: 5px 0;
+}
+
+/* Make portfolio link stand out */
+section p a[href*="github"] {
+  background-color: #24292e;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+section p a[href*="linkedin"] {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+section p a[href*="Music"] {
+  background-color: blue; /* LinkedIn blue */
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
